@@ -1,0 +1,7 @@
+/* Admin: reviews table */
+.tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+.tabs a { padding: 8px 22px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); transition: all .3s var(--ease); }
+.tabs a:hover { border-color: var(--accent); color: var(--text); }
+.tabs a.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.reviews-table .comment { max-width: 320px; min-width: 220px; }
+.reviews-table td { vertical-align: top; }

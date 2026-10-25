@@ -1,0 +1,3 @@
+/* Admin: classes table */
+.classes-table td:first-child { white-space: nowrap; }
+.classes-table .confirm-box { width: 280px; }
