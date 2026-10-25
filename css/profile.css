@@ -1,0 +1,16 @@
+/* Profile page */
+.profile { padding-top: 40px; }
+.profile-grid { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; margin-bottom: 48px; }
+.side { text-align: center; }
+.side > * { margin-bottom: 8px; }
+.avatar.big { width: 84px; height: 84px; font-size: 1.8rem; margin-bottom: 14px; }
+.since { font-size: .85rem; }
+.profile form h3 { margin-bottom: 18px; }
+.booked h2 { margin-bottom: 20px; }
+.booked .table-wrap { overflow: visible; }
+.booked td a:hover { color: var(--accent); }
+
+@media (max-width: 900px) {
+    .profile-grid { grid-template-columns: 1fr; }
+    .booked .table-wrap { overflow-x: auto; padding-bottom: 120px; margin-bottom: -120px; border-bottom: 0; }
+}
