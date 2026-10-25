@@ -1,0 +1,14 @@
+/* Register page (layout comes from login.css) */
+.role-toggle { margin-bottom: 20px; }
+.role-toggle input[type=radio] { position: absolute; opacity: 0; pointer-events: none; }
+.role-toggle > label {
+    display: inline-block; width: calc(50% - 4px); text-align: center; cursor: pointer;
+    padding: 10px; margin: 0 0 16px; border: 1px solid var(--border); border-radius: 999px;
+    color: var(--muted); font-weight: 600; transition: all .35s var(--ease);
+}
+.role-toggle > label:hover { border-color: var(--accent); }
+#r-member:checked + label,
+#r-trainer:checked + label { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.trainer-fields { display: none; }
+#r-trainer:checked ~ .trainer-fields { display: grid; animation: fadeUp .5s var(--ease); }

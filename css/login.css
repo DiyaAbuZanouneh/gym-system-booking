@@ -1,0 +1,23 @@
+* Login page (the split layout is also reused by register) */
+.auth { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 68px); }
+.auth-photo {
+    display: flex; flex-direction: column; justify-content: center; padding: 48px;
+    background-size: cover; background-position: center; background-color: var(--surface);
+}
+.auth-photo > * { animation: fadeUp .9s var(--ease) both; }
+.auth-photo p { animation-delay: .2s; font-size: 1.1rem; margin-top: 8px; }
+.auth-photo h2 { font-size: clamp(2rem, 5vw, 3.2rem); }
+.auth-photo h2 span { color: var(--accent); }
+.auth-form { display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+.auth-card { width: min(480px, 100%); padding: 36px; animation: fadeUp .8s var(--ease) .1s both; }
+.auth-card h2 { margin-bottom: 20px; }
+.switch { text-align: center; margin-top: 18px; font-size: .95rem; }
+.switch a { color: var(--accent); font-weight: 600; }
+
+@media (max-width: 900px) {
+    .auth { grid-template-columns: 1fr; }
+    .auth-photo { padding: 40px 24px; min-height: 200px; }
+}
+@media (max-width: 600px) {
+    .auth-card { padding: 24px 18px; }
+}
