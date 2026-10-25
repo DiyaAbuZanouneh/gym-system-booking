@@ -1,0 +1,21 @@
+/* Trainer: My Classes page */
+.accent { color: var(--accent); }
+.create { margin-bottom: 28px; }
+.create > summary { list-style: none; display: inline-block; cursor: pointer; }
+.create > summary::-webkit-details-marker { display: none; }
+.create[open] > summary { background: var(--surface-2); border-color: var(--border); }
+.create-form { margin-top: 22px; animation: fadeUp .5s var(--ease); }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+.tabs a { padding: 8px 22px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); transition: all .3s var(--ease); }
+.tabs a:hover { border-color: var(--accent); color: var(--text); }
+.tabs a.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.my-table { overflow: visible; }
+.mini { height: 6px; width: 90px; border-radius: 99px; background: var(--surface-2); margin-top: 4px; overflow: hidden; }
+.mini i { display: block; height: 100%; background: var(--accent); }
+
+@media (max-width: 900px) {
+    /* tables scroll sideways on small screens; leave room for the confirm popups */
+    .my-table { overflow-x: auto; padding-bottom: 110px; margin-bottom: -110px; border-bottom: 0; }
+}

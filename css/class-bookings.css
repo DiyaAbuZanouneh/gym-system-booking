@@ -1,0 +1,13 @@
+/* Trainer: class bookings page */
+.crumb a { color: var(--accent); }
+.summary { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 24px; }
+.summary span { display: block; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .6px; }
+.search { display: flex; gap: 10px; margin-bottom: 20px; }
+.search input { max-width: 340px; }
+.who { display: flex; align-items: center; gap: 10px; }
+.avatar.sm { width: 34px; height: 34px; font-size: .8rem; }
+
+@media (max-width: 600px) {
+    .summary { gap: 20px; }
+    .search input { max-width: none; }
+}
